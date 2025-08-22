@@ -1,0 +1,38 @@
+# CODEOWNERS file for order-connector-529
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-api @Armor-test/unit-test @Armor-test/squad-search
+
+# Directory ownership
+/pkg/ @Armor-test/unit-cloud @Armor-test/squad-ux @Armor-test/squad-api
+/public/ @Armor-test/squad-api @Armor-test/squad-ml @Armor-test/team-frontend
+/src/ @Armor-test/dept-reporting @Armor-test/squad-performance @Armor-test/squad-cloud
+/test/ @Armor-test/squad-reporting @Armor-test/squad-cloud
+/third_party/ @Armor-test/dept-reporting @Armor-test/squad-apps @Armor-test/unit-cloud
+/web/ @Armor-test/grp-integration @Armor-test/dept-notifications @Armor-test/grp-payments
+/deploy/ @Armor-test/squad-reporting @Armor-test/squad-product @Armor-test/squad-api
+/components/ @Armor-test/squad-performance @Armor-test/team-notifications
+/hooks/ @Armor-test/dept-reliability @Armor-test/squad-ml
+/styles/ @Armor-test/dept-test @Armor-test/unit-cloud
+/auth/ @Armor-test/dept-automation @Armor-test/grp-search
+
+# File type ownership
+*.go @Armor-test/squad-qa @Armor-test/unit-governance
+*.yaml @Armor-test/grp-integration @Armor-test/squad-frontend @Armor-test/squad-payments
+*.sh @Armor-test/dept-test @Armor-test/squad-tooling
+*.json @Armor-test/dept-test @Armor-test/team-governance
+*.h @Armor-test/squad-product @Armor-test/squad-cloud
+*.css @Armor-test/squad-reporting @Armor-test/grp-reporting @Armor-test/dept-logging
+*.html @Armor-test/team-research @Armor-test/squad-database @Armor-test/squad-reporting
+*.sql @Armor-test/squad-api @Armor-test/grp-storage
+*.properties @Armor-test/team-governance @Armor-test/squad-cloud @Armor-test/team-research
+*.md @Armor-test/squad-product @Armor-test/squad-ml @Armor-test/dept-notifications
+*.scss @Armor-test/dept-release @Armor-test/dept-security
+*.py @Armor-test/dept-notifications @Armor-test/squad-qa @Armor-test/dept-data
+*.yml @Armor-test/dept-automation @Armor-test/grp-storage
+*.config @Armor-test/team-notifications @Armor-test/squad-api @Armor-test/squad-frontend
+*.swift @Armor-test/dept-notifications @Armor-test/squad-database @Armor-test/dept-billing
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
